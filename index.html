@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JOS News</title>
+    <link rel="icon" type="image/x-icon" href="josnewslogo.png" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="nav-left">
+        <a href="#" class="logo">
+          <img src="josnewslogo.png" alt="JOS News Logo" />
+        </a>
+      </div>
+      <div class="nav-center" id="nav-links">
+        <a href="#" data-query="home">Home</a>
+        <a href="#" data-query="latest">Latest News</a>
+        <a href="#" data-query="cricket">Cricket</a>
+        <a href="#" data-query="india">India</a>
+        <a href="#" data-query="world">World</a>
+        <a href="#" data-query="education">Education</a>
+      </div>
+      <div class="nav-right">
+        <input type="text" placeholder="Search..." class="search-bar" />
+        <button class="search-button">Search</button>
+      </div>
+      <div class="hamburger" id="hamburger">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+    </nav>
+
+    <div class="card_container"></div>
+    <template id="template_card">
+      <div class="card1">
+        <img src="newsimg1.png" alt="News Image" />
+        <div class="card_content">
+          <h3>card 1</h3>
+          <p>
+            hfhksfklw csckjaskjak cknahckjashckjs hadjaskjkja hudagjahka bajbkac
+            mncbijasbckciuabc bciakc basuifbask uidjab
+          </p>
+          <p class="source">Source: <span class="source_name"></span></p>
+          <p class="date">Published on: <span class="publish_date"></span></p>
+          <a href="" class="btn">Read more</a>
+        </div>
+      </div>
+    </template>
+
+    <script src="app.js"></script>
+  </body>
+</html>
