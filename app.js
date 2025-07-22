@@ -8,7 +8,7 @@ const url = "https://josnews-backend.onrender.com/news?q=";
 window.addEventListener("load", () => fetchNews("Technology"));
 
 async function fetchNews(query) {
-  const res = await fetch(`${url}${query}&apiKey=${Api_key}`);
+  const res = await fetch(`${url}${query}`);
   const data = await res.json();
   displayNews(data.articles);
 }
