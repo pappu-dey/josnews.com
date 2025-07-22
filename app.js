@@ -2,8 +2,8 @@ document.getElementById("hamburger").addEventListener("click", function () {
   document.getElementById("nav-links").classList.toggle("active");
 });
 
-const Api_key = "fe67d2d1a08b477d8ea97f79e5f690ae";
-const url = "https://newsapi.org/v2/everything?q=";
+const url = "https://josnews-backend.onrender.com/news?q="; 
+
 
 window.addEventListener("load", () => fetchNews("Technology"));
 
